@@ -18,11 +18,15 @@
 
 In this workshop, you will:
 
-  - Use advanced GitHub Copilot interaction techniques to deal with a legacy project
-  - Iterate, validate, and refine answers to upgrade the legacy project and validate its correctness
-  - Apply generic concpets that can improve suggestions and select from different strategies that can yield better results.
-  - Build a thorough testing strategy to help you identify potential issues and
-    validate the project in its final state after upgrading.
+  - Understand the Differences Between Python and Rust for Web Development
+  Learn the key differences in syntax, libraries, and frameworks when transitioning from Python's FastAPI to Rust's actix-web.
+  - Implement JSON Serialization and Deserialization in Rust
+  Gain hands-on experience using the serde library to handle JSON data, ensuring compatibility with the original Python API.
+  - Develop and Validate Incremental Endpoints in Rust
+  Practice creating and testing individual endpoints iteratively, ensuring correctness and alignment with the original Python API.
+  - Optimize Performance and Identify Bottlenecks in Rust
+  Learn to analyze and address potential performance issues, such as redundant file serialization, while building a production-ready Rust application.
+
 
 ## :mega: Prerequisites
 
