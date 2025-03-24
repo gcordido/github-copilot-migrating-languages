@@ -4,24 +4,16 @@
 ARG VARIANT="3.12-bullseye"
 FROM mcr.microsoft.com/vscode/devcontainers/python:1-${VARIANT}
 # Set environment variables
-ENV DEBIAN_FRONTEND=noninteractive \
-    PYTHONUNBUFFERED=1 \
-    PATH="/root/.cargo/bin:$PATH" \
-    CARGO_HOME="/root/.cargo" \
-    RUSTUP_HOME="/root/.rustup"
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies and Rust
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3 \
-    python3-pip \
     curl \
     build-essential \
     libssl-dev \
     pkg-config \
     && apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
-    rustup install stable && \
-    rustup default stable
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y 
     
 # Define the path to the virtualenv to work with
 ARG VENV_PATH="/home/vscode/venv"
