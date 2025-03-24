@@ -12,8 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libssl-dev \
     pkg-config \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y 
+    && apt-get clean && rm -rf /var/lib/apt/lists/* 
     
 # Define the path to the virtualenv to work with
 ARG VENV_PATH="/home/vscode/venv"

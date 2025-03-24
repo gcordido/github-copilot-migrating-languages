@@ -17,7 +17,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": ". /home/vscode/venv/bin/activate",
+	"postCreateCommand": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y",
 
 	// Configure tool-specific properties.
 	"customizations": {
