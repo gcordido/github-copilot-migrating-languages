@@ -163,7 +163,7 @@ Use GitHub Copilot in Agent mode for this challenge. Use Agent mode to achieve
 the following:
 
 1. Create a Makefile with build, build-container, test, and run targets
-1. Make the container produce a useful help menu when no targets are passed in
+1. Make the `Makefile` produce a useful help menu when no targets are passed in
 1. Explore additional targets like release-build and similar that GitHub
    Copilot might suggest in Ask mode
 
