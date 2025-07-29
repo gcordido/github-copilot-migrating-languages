@@ -79,14 +79,14 @@ Now that you have a good understanding of the project and its tests, you can sta
 - Use `actix-web` for the web framework
 - Use `serde` for JSON serialization and deserialization
 
-Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started. 
+Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started.
 
 > [!NOTE]
-> Why the dependencies might not fully work? Because LLMs sometimes don't have correct versions and tend to provide probabilistic results, not exact ones like a database would. Ensure that the versions used and installed will work and are correct. 
+> Why the dependencies might not fully work? Because LLMs sometimes don't have correct versions and tend to provide probabilistic results, not exact ones like a database would. Ensure that the versions used and installed will work and are correct.
 
 
 ### 6. Create a single endpoint
-Now that you have the scaffolding, you can start creating a single endpoint. Use Copilot to suggest the first pass for the `main.rs` file that will hold your first endpoint. Ensure that Copilot understands that it shouldn't generate the whole file, but only the main `/` endpoint. 
+Now that you have the scaffolding, you can start creating a single endpoint. Use Copilot to suggest the first pass for the `main.rs` file that will hold your first endpoint. Ensure that Copilot understands that it shouldn't generate the whole file, but only the main `/` endpoint.
 
 - Open the `main.rs` file and ask Copilot to generate *only* the `/` endpoint
 
@@ -111,7 +111,7 @@ For the JSON file, you will need to serialize and use `serde`. If you aren't fam
 > [!TIP]
 > Validating smaller parts of the code is easier than validating a whole file. It is also easier to debug smaller parts of the code. This is a good practice when using GitHub Copilot and it will help you in the long run.
 
-### 9. Validate correctness 
+### 9. Validate correctness
 
 Once you have all endpoiints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
 
@@ -129,3 +129,57 @@ Now that you have all the endpoints and tests passing, you can now use Rust test
 - Ask Copilot where you can add tests for the Rust project. Tests can go in the same `main.rs` file or in a separate file.
 - Ask how to run the tests for validation
 - Only add one test a time and validate it. This is the same process as before and will help you concentrate in one thing at a time.
+
+
+### BONUS Challenge!
+
+You should have a fully operating Rust application that is well tested by now.
+If you are reaching this point, congratulations! You can try achieving these
+tasks before time runs out or try them on your own time later.
+
+
+**Bonus Challenge 1**
+
+Containerize this project so that users can run it in other environments
+without having to install and compile dependencies.
+
+You can start with Agent mode to create the Dockerfile, then switch over to
+Edit mode when making udpates to the Dockerfile. Finally, switch over to Agent
+mode to get guidance verifying the container.
+
+1. Ask Copilot to help you generate a Dockerfile to containerize the Rust
+   project
+1. Review the Dockerfile created, optionally switch to Edit mode to make
+   specific changes to the file
+1. Use Agent mode to verify the container builds and can run
+
+Make adjustments as needed to ensure the container works.
+
+
+**Bonus Challenge 2**
+
+Create a useful `Makefile` to make it easier to interact with the Rust project.
+Use GitHub Copilot in Agent mode for this challenge. Use Agent mode to achieve
+the following:
+
+1. Create a Makefile with build, build-container, test, and run targets
+1. Make the container produce a useful help menu when no targets are passed in
+1. Explore additional targets like release-build and similar that GitHub
+   Copilot might suggest in Ask mode
+
+**Take Home**
+
+If you have achieved all previous steps including the containerization, try
+deploying your application on Azure. For this you will need an Azure account
+and [the GitHub Copilot for Azure
+extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)
+which will help you ask questions and get guidance for deployment.
+
+1. Use `@azure` after signing into your Azure account to ask how to deploy the
+   containerized Rust application
+1. Use one of the suggested services for deployment, for example, Azure
+   Container Apps, to deploy the container
+1. Verify your container is deployed and working
+
+By the end, ensure you cleanup and remove any and all resources to prevent
+unneeded cloud charges to your account.
