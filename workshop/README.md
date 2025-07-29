@@ -144,7 +144,7 @@ Containerize this project so that users can run it in other environments
 without having to install and compile dependencies.
 
 You can start with Agent mode to create the Dockerfile, then switch over to
-Edit mode when making udpates to the Dockerfile. Finally, switch over to Agent
+Edit mode when making updates to the Dockerfile. Finally, switch over to Agent
 mode to get guidance verifying the container.
 
 1. Ask Copilot to help you generate a Dockerfile to containerize the Rust
