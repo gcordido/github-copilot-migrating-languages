@@ -74,7 +74,7 @@ The tests are not complete and there are some missing cases. Use GitHub Copilot 
 
 ### 6. Create Rust scaffolding
 
-Now that you have a good understanding of the project and its tests, you can start creating the Rust scaffolding. You will start by creating a special file with instructions. This file is called _Copilot Instructions_ and it should live in the root of the current repository. We've pre-created an empty file for you so all is needed is to fill it out with new instructions.
+Now that you have a good understanding of the project and its tests, you can start creating the Rust scaffolding. You will start by creating a special file with instructions. This file is called _Copilot Instructions_ and it should live in the root of the current repository. We've pre-created an empty file for you so all that is needed is to fill it out with new instructions.
 
 For this step, open the `.github/copilot-instructions.md` file and add the
 following:
