@@ -158,7 +158,7 @@ Make adjustments as needed to ensure the container works.
 
 **Bonus Challenge 2**
 
->[!NOTE]
+> [!NOTE]
 > You may have a `Makefile` already created by Copilot as part of this
 > workshop. If that is the case, just make the updates necessary, otherwise
 > create a new one.
