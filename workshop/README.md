@@ -182,7 +182,7 @@ For the JSON file, you will need to serialize and use `serde`. If you aren't fam
 
 ### 9. Validate correctness
 
-Once you have all endpoiints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
+Once you have all endpoints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
 
 <details>
 <summary>Tip</summary>
