@@ -34,6 +34,17 @@ Use the `@workspace` agent to explain what is going on with this project.
 - Open GitHub Copilot Chat and prefix your prompt with `@workspace`
 - Ask questions like how to run the project
 
+<details>
+<summary>Tip</summary>
+
+##### Prompt
+
+```text
+#codebase provide me a detailed summary of what this Python project is about
+```
+
+</details>
+
 ### 2. Determine the API endpoints
 
 Launch your project and run the web application. Use GitHub Copilot chat with the `main.py` file open to provide context and ask about the endpoints.
@@ -63,6 +74,19 @@ Now that you have a good understanding of the project, you can start strategizin
 > Sometimes, GitHub Copilot may be eager to provide a lot of information including whole files with code. This is probably not what you want when trying to think about your options.
 > Ensure you tell Copilot to avoid generating code when brainstorming and strategizing.
 
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Ask Mode)
+
+```text
+#codebase why are these tests using BASH a good idea if I want to rewrite the
+application from Python to Rust?
+```
+
+</details>
+
+
 ### 5. Identify missing tests
 
 The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in Rust.
@@ -70,6 +94,25 @@ The tests are not complete and there are some missing cases. Use GitHub Copilot 
 - Open the test file and ask GitHub Copilot to identify missing tests
 - Implement the missing tests
 - Run the tests to ensure they are passing, fix any issues that arise
+
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Edit Mode)
+
+```text
+Add any missing tests for the endpoints. There are missing cases. Help me get
+coverage
+```
+
+##### Prompt (Agent Mode)
+
+```text
+Help me run the tests using the BASH file and check that they pass. In case of
+failure, help me address the failures to get the tests passing
+```
+
+</details>
 
 
 ### 6. Create Rust scaffolding
@@ -102,6 +145,17 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
 >[!NOTE]
 > You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
 
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Agent Mode)
+
+```text
+#codebase add the root of the API only. This is the '/' endpoint, do not
+generate other endpoints yet, focus only on the single root endpoint for now.
+```
+
+</details>
 
 ### 7. Validate your first Rust endpoint
 
@@ -110,6 +164,21 @@ Now that you have the first endpoint in Rust, it is time to validate. This proce
 - Make sure the Python project is no longer running
 - Ask Copilot help to run the Rust project in the same address and port as the Python project so that tests can run
 - Run the tests to ensure they are passing, fix any issues that arise
+
+
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Agent Mode)
+
+```text
+Run the Rust project in the same address and port as the Python one. Make sure
+the Python API is no longer running. Then, run the BASH tests so that I can
+verify the first endpoint in Rust is working. Only focus on the "/" endpoint
+for now
+```
+
+</details>
 
 ### 8. Continue with all other endpoints
 
@@ -122,7 +191,20 @@ For the JSON file, you will need to serialize and use `serde`. If you aren't fam
 
 ### 9. Validate correctness
 
-Once you have all endpoiints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
+Once you have all endpoints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
+
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Agent Mode)
+
+```text
+Identify any potential problems with my main.rs file. Specifically I am
+interested in understanding redundancy and any code that is doing unnecessary
+work. Do not generate any code, just explain.
+```
+
+</details>
 
 ### 10. Add more endpoints with tests
 
@@ -132,12 +214,38 @@ Finally, you have a 1:1 mapping of the Python project to the Rust project. Now y
 - Open the `test_endpoints.sh` file and ask Copilot to add more tests for the new endpoints
 - Run the tests to ensure they are passing, fix any issues that arise
 
+
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Agent Mode)
+
+```text
+The Rust API now has full parity with the Python application, but I want you to
+suggest me other potential endpoints that might be useful like
+/countries/{country} . Make sure you update the test_endpoints.sh file as well.
+```
+
+</details>
+
 ### 11. Finalize the project with Rust tests
 Now that you have all the endpoints and tests passing, you can now use Rust tests to validate the correctness. The shell tests were good enough to validate both Python and Rust by using the HTTP API. But now you can use Rust tests to validate the correctness of the Rust project using its own tests.
 
 - Ask Copilot where you can add tests for the Rust project. Tests can go in the same `main.rs` file or in a separate file.
 - Ask how to run the tests for validation
 - Only add one test a time and validate it. This is the same process as before and will help you concentrate in one thing at a time.
+
+<details>
+<summary>Tip</summary>
+
+##### Prompt (Agent Mode)
+
+```text
+Now that we have all endpoints in Rust I want native Rust unit tests. Add them
+to main.rs so that I can verify correctness without having to use the BASH file
+```
+
+</details>
 
 
 ### BONUS Challenge!
