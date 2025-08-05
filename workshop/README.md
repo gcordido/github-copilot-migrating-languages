@@ -28,18 +28,38 @@ Here are some features:
 1. All dependencies and libraries are pre-installed for Python
 1. An initial test file in BASH is provided to validate correctness
 
+## GitHub Copilot Modes
+
+GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each designed to enhance your coding workflow in unique ways. These modes cater to different levels of assistance, from answerin questions to autonomously managing complex tasks.
+
+### Ask Mode
+
+**Ask Mode** is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code. 
+
+> Ask mode works best for quick clarifications, brainstorming solutions and providing sample implementations.
+
+### Edit Mode
+
+**Edit Mode** enables *direct code modifications* based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
+
+> Try Edit mode in targeted updates, such as refactoring or adding eror handling.
+
+### Agent Mode
+
+ **Agent Mode** is the most autonomous and powerful of the three. It allows Copilot to analyze your entire project, plan tasks, make edits, run commands, and iterate until the goal is achieved. This mode is ideal for multi-step tasks, such as building features, fixing bugs, or scaffolding new components. While Agent mode automates much of the process, it still surfaces potentially risky actions for your approval, ensuring safety and correctness.
+
 
 ## Start with the Python Project
 Familiarize yourself with the project and its structure. The main file is
 `main.py`, which contains the main logic of the application. Try to run it and see what the endpoints are.
 
-### 1. Explore the project using GitHub Copilot Ask Mode
+### 1. Explore the project 
+
+> Try using GitHub Copilot in Ask Mode for this step.
 
 First, open GitHub Copilot by pressing `Ctrl + Alt + I` if you are on Windows, or `Command + Shift + I` if you are on Mac, and ensure you are in **Ask** Mode:
 
 ![An image showcasing the three different modes within the GitHub Copilot Chat window](../assets/chat-mode-dropdown-ask.png "GitHub Copilot Modes")
-
->[!NOTE] Ask Mode is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code.
 
 Use the `#codebase` tool to provide context to Copilot and explain what is going on with this project.
 
@@ -59,6 +79,8 @@ Use the `#codebase` tool to provide context to Copilot and explain what is going
 
 ### 2. Determine the API endpoints
 
+> Try using GitHub Copilot in Ask Mode for this step.
+
 Launch your project and run the web application. Use GitHub Copilot chat with the `main.py` file open, or type `#main.py` to provide context and ask about the endpoints.
 
 - Try to run the project based on the suggestions of Copilot
@@ -66,6 +88,8 @@ Launch your project and run the web application. Use GitHub Copilot chat with th
 
 
 ### 3. Explore and run the shell tests
+
+> Try using GitHub Copilot in Agent Mode for this step.
 
 Tests are provided in the `tests` directory. Open the `test_endpoints.sh` file and use it to run tests. It requires the Python application to be running. Run the tests and inspect the output.
 
@@ -77,6 +101,9 @@ Tests are provided in the `tests` directory. Open the `test_endpoints.sh` file a
 > You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.
 
 ### 4. Strategize with GitHub Copilot
+
+> Try using GitHub Copilot in Ask Mode for this step.
+
 Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the tests might be a good idea when rewriting the project in Rust.
 
 - Ask GitHub Copilot to provide a summary of the tests
@@ -101,12 +128,11 @@ application from Python to Rust?
 
 ### 5. Identify missing tests
 
+> For this step you can use either Edit Mode or Agent Mode.
+
 The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in Rust.
 
 For this step, you can use either **Edit Mode** or **Agent Mode**.
-
->[!NOTE] **Edit Mode** enables direct code modifications based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
-> **Agent Mode** is the most autonomous and powerful of the three. It allows Copilot to analyze your entire project, plan tasks, make edits, run commands, and iterate until the goal is achieved. This mode is ideal for multi-step tasks, such as building features, fixing bugs, or scaffolding new components. While Agent mode automates much of the process, it still surfaces potentially risky actions for your approval, ensuring safety and correctness
 
 - Open the test file and ask GitHub Copilot to identify missing tests
 - Implement the missing tests
@@ -133,6 +159,8 @@ failure, help me address the failures to get the tests passing
 
 
 ### 6. Create Rust scaffolding
+
+> You should use GitHub Copilot in Agent Mode for this step and onwards.
 
 Now that you have a good understanding of the project and its tests, you can start creating the Rust scaffolding. You will start by creating a special file with instructions. This file is called _Copilot Instructions_ and it should live in the root of the current repository. We've pre-created an empty file for you so all that is needed is to fill it out with new instructions.
 
