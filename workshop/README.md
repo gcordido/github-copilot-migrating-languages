@@ -1,10 +1,16 @@
-## Migrating a Python project to Rust
+## Migrating Zava's Temperature API from Python to Rust
+
+As part of **Zava**'s business goals, the company is expanding their cutting-edge smart fiber technology to a wider array of retail products. Zava specializes in heat-resistant materials that adapt to various climate conditions, and their current temperature/season/location API serves as a critical backend service for these innovative products.
+
+To support this expansion and ensure enterprise-level reliability, Zava needs to **migrate their existing Python-based temperature API to Rust**. This migration will provide enhanced security through Rust's memory safety features, improved performance with zero-cost abstractions, and better scalability to handle the increased demand from retail market integration. The API currently provides historical weather data across multiple countries, cities, and months - data that's essential for Zava's smart fiber products to perform optimally in different environmental conditions.
+
+This workshop will guide you through the complete migration process using GitHub Copilot, demonstrating how AI-assisted development can streamline the transition from Python to Rust while maintaining full API compatibility and improving overall system robustness.
 
 Let's go through some challenging requests for GitHub Copilot and address them
 as they happen.
 
 > [!NOTE]
-> This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
+> This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat** within **VS Code**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
 >
 > Each step (where applicable) also contains a `Cheatsheet` which can be used to validate the Copilot suggestion(s) against the correct command.
 >
@@ -12,7 +18,7 @@ as they happen.
 
 ## Workshop features
 
-In this workshop, you will be working with a Python project that has an HTTP
+You will be working with a Python project that has an HTTP
 API. This project needs to be migrated and your main task will be to migrate
 it over using the Rust programming language.
 Here are some features:
@@ -27,17 +33,23 @@ Here are some features:
 Familiarize yourself with the project and its structure. The main file is
 `main.py`, which contains the main logic of the application. Try to run it and see what the endpoints are.
 
-### 1. Explore the project using agents
+### 1. Explore the project using GitHub Copilot Ask Mode
 
-Use the `@workspace` agent to explain what is going on with this project.
+First, open GitHub Copilot by pressing `Ctrl + Alt + I` if you are on Windows, or `Command + Shift + I` if you are on Mac, and ensure you are in **Ask** Mode:
 
-- Open GitHub Copilot Chat and prefix your prompt with `@workspace`
+![An image showcasing the three different modes within the GitHub Copilot Chat window](../assets/chat-mode-dropdown-ask.png "GitHub Copilot Modes")
+
+>[!NOTE] Ask Mode is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code.
+
+Use the `#codebase` tool to provide context to Copilot and explain what is going on with this project.
+
+- Open GitHub Copilot Chat and prefix your prompt with `#codebase`
 - Ask questions like how to run the project
 
 <details>
 <summary>Tip</summary>
 
-##### Prompt
+##### Prompt (Ask Mode)
 
 ```text
 #codebase provide me a detailed summary of what this Python project is about
@@ -47,9 +59,9 @@ Use the `@workspace` agent to explain what is going on with this project.
 
 ### 2. Determine the API endpoints
 
-Launch your project and run the web application. Use GitHub Copilot chat with the `main.py` file open to provide context and ask about the endpoints.
+Launch your project and run the web application. Use GitHub Copilot chat with the `main.py` file open, or type `#main.py` to provide context and ask about the endpoints.
 
-- Try to run the project based on the suggestions of `@workspace` agent
+- Try to run the project based on the suggestions of Copilot
 - See all the possible endpoints and their requests types
 
 
@@ -62,10 +74,10 @@ Tests are provided in the `tests` directory. Open the `test_endpoints.sh` file a
 
 > [!NOTE]
 > The application must be running for the tests to pass. If the app is not running you will get http errors.
-> You can ask GitHub Copilot with the `@workspace` agent for help to run the application and gain insights on how to start it.
+> You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.
 
 ### 4. Strategize with GitHub Copilot
-Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Use the `@workspace` agent to ask questions about why the tests might be a good idea when rewriting the project in Rust.
+Now that you have a good understanding of the project, you can start strategizing with GitHub Copilot. Using **Ask Mode**, ask questions about why the tests might be a good idea when rewriting the project in Rust.
 
 - Ask GitHub Copilot to provide a summary of the tests
 - Ask for suggestions on how to properly rewrite this project in Rust
@@ -90,6 +102,11 @@ application from Python to Rust?
 ### 5. Identify missing tests
 
 The tests are not complete and there are some missing cases. Use GitHub Copilot to identify the missing tests. This will help you get full coverage of the application before you start rewriting it in Rust.
+
+For this step, you can use either **Edit Mode** or **Agent Mode**.
+
+>[!NOTE] **Edit Mode** enables direct code modifications based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
+> **Agent Mode** is the most autonomous and powerful of the three. It allows Copilot to analyze your entire project, plan tasks, make edits, run commands, and iterate until the goal is achieved. This mode is ideal for multi-step tasks, such as building features, fixing bugs, or scaffolding new components. While Agent mode automates much of the process, it still surfaces potentially risky actions for your approval, ensuring safety and correctness
 
 - Open the test file and ask GitHub Copilot to identify missing tests
 - Implement the missing tests
@@ -127,8 +144,7 @@ Whenever you are providing suggestions for a Rust project always use the
 actix-web framework using serde for serialization
 ```
 
-Now use GitHub Copilot in Agent mode to create the scaffolding necessary for
-your Rust project. Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started.
+As we will carry out a more complex set of tasks, we will move on from **Edit Mode** and solely work in **Agent Mode**. Once you have switched, ask GitHub Copilot to create the scaffolding necessary for your Rust project. Ask GitHub Copilot to give you a step by step to start the project and the commands to run to get started.
 
 The framework and the serializer should automatically be included without you having to specify it. This file can be used for any other instruction you don't want to repeat.
 
