@@ -7,7 +7,7 @@
   <a href="#learning-objectives">Learning Objectives</a>
 </p>
 
-- **Who is this for**: Any tecnologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
+- **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
 - **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
 - **What you'll build**: An HTTP API that uses Rust with full compatibility from the original HTTP API written in Python.
 
