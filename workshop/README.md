@@ -42,7 +42,7 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 
 **Edit Mode** enables *direct code modifications* based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
 
-> Try Edit mode in targeted updates, such as refactoring or adding eror handling.
+> Try Edit mode in targeted updates, such as refactoring or adding error handling.
 
 ### Agent Mode
 
