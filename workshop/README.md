@@ -30,7 +30,7 @@ Here are some features:
 
 ## GitHub Copilot Modes
 
-GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each designed to enhance your coding workflow in unique ways. These modes cater to different levels of assistance, from answerin questions to autonomously managing complex tasks.
+GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each designed to enhance your coding workflow in unique ways. These modes cater to different levels of assistance, from answering questions to autonomously managing complex tasks.
 
 ### Ask Mode
 
