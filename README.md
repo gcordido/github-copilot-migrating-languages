@@ -1,4 +1,4 @@
-<h1 align="center">Migrating a Python API to Rust with GitHub Copilot</h1>
+<h1 align="center">Real world code migration with GitHub Copilot Agent Mode</h1>
 <h5 align="center">Perform a challenging migration to a completely different language</h3>
 
 <p align="center">
@@ -7,8 +7,8 @@
   <a href="#learning-objectives">Learning Objectives</a>
 </p>
 
-- **Who is this for**: Any tecnologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
-- **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages.
+- **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
+- **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
 - **What you'll build**: An HTTP API that uses Rust with full compatibility from the original HTTP API written in Python.
 
 > [!NOTE]
@@ -18,6 +18,7 @@
 
 In this workshop, you will:
 
+  - Learn the differences about each of GitHub Copilot Modes, when to use each one, best practices and tools to help you get the most out of your interactions.
   - Understand the Differences Between Python and Rust for Web Development
   Learn the key differences in syntax, libraries, and frameworks when transitioning from Python's FastAPI to Rust's actix-web.
   - Implement JSON Serialization and Deserialization in Rust
