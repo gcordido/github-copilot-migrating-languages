@@ -19,20 +19,18 @@ Use the `#codebase` tool to provide context to Copilot and explain what is going
 - Open GitHub Copilot Chat and prefix your prompt with `#codebase`
 - Ask questions like how to run the project
 
-<details>
-<summary>Tip</summary>
+??? question "Tip"
 
-Prompt (Ask Mode)
+    Prompt (Ask Mode)
 
-```text
-#codebase provide me a detailed summary of what this Python project is about
-```
+    ```text
+    #codebase provide me a detailed summary of what this Python project is about
+    ```
 
-</details>
 
 ### 2. Determine the API endpoints
 
-> Try using GitHub Copilot in Ask Mode for this step.
+> *Try using GitHub Copilot in Ask Mode for this step.*
 
 Launch your project and run the web application. Use GitHub Copilot chat with the `main.py` file open, or type `#main.py` to provide context and ask about the endpoints.
 
@@ -49,6 +47,6 @@ Tests are provided in the `tests` directory. Open the `test_endpoints.sh` file a
 - Ask GitHub Copilot if more tests can be added
 - If any tests are not currently passing, make sure they are updated
 
-!!! note
+!!! warning
     The application must be running for the tests to pass. If the app is not running you will get http errors.
     You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.

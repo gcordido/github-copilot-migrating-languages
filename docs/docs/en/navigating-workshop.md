@@ -11,4 +11,14 @@ Take a moment to familiarize yourself with the workshop document layout:
 
 To view images in the documentation at a larger size, you can click on them. This will open the image in a new tab, allowing you to see more detail.
 
-![Workshop Documentation Layout](PLACEHOLDER_IMAGE.png)
+![Workshop Documentation Layout](./media/workshop-layout.png)
+
+### Copying Code Snippets
+
+To make the most of the workshop, you will often need to text code snippets from the documentation.
+
+The text snippets are highlighted in gray boxes throughout the documentation. You can copy the text by clicking the copy icon that appears when you hover over the right side of the snippet.
+
+```text
+# Example text snippet
+```

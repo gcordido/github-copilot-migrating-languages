@@ -1,6 +1,6 @@
 # Create Rust Scaffolding
 
-> You should use GitHub Copilot in Agent Mode for this step and onwards.
+> *You should use GitHub Copilot in Agent Mode for this step and onwards.*
 
 Now that you have a good understanding of the project and its tests, you can start creating the Rust scaffolding. You will start by creating a special file with instructions. This file is called _Copilot Instructions_ and it should live in the root of the current repository. We've pre-created an empty file for you so all that is needed is to fill it out with new instructions.
 
@@ -17,5 +17,5 @@ As we will carry out a more complex set of tasks, we will move on from **Edit Mo
 The framework and the serializer should automatically be included without you having to specify it. This file can be used for any other instruction you don't want to repeat.
 
 
-> [!NOTE]
-> Why the dependencies might not fully work? Because LLMs sometimes don't have correct versions and tend to provide probabilistic results, not exact ones like a database would. Ensure that the versions used and installed will work and are correct.
+!!! bug "Why might some dependencies not work as expected? "
+     Because LLMs sometimes don't have correct versions and tend to provide probabilistic results, not exact ones like a database would. Ensure that the versions used and installed will work and are correct.

@@ -5,17 +5,13 @@ Now that you have all the endpoints and tests passing, you can now use Rust test
 - Ask how to run the tests for validation
 - Only add one test a time and validate it. This is the same process as before and will help you concentrate in one thing at a time.
 
-<details>
-<summary>Tip</summary>
+??? question "Tip"
+    Prompt *(Agent Mode)*
 
-##### Prompt (Agent Mode)
-
-```text
-Now that we have all endpoints in Rust I want native Rust unit tests. Add them
-to main.rs so that I can verify correctness without having to use the BASH file
-```
-
-</details>
+    ```text
+    Now that we have all endpoints in Rust I want native Rust unit tests. Add them
+    to main.rs so that I can verify correctness without having to use the BASH file
+    ```
 
 You should have a fully operating Rust application that is well tested by now.
 If you are reaching this point, congratulations! You can try achieving these

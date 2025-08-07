@@ -10,6 +10,8 @@ and [the GitHub Copilot for Azure
 extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)
 which will help you ask questions and get guidance for deployment.
 
+![Extension Page for GitHub Copilot for Azure](./media/gh-copilot-for-azure.png)
+
 1. Use `@azure` after signing into your Azure account to ask how to deploy the
    containerized Rust application
 1. Use one of the suggested services for deployment, for example, Azure

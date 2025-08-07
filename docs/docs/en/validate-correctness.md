@@ -4,18 +4,15 @@
 
 Once you have all endpoints in Rust with passing tests, then you can ask Copilot to do a review of the whole file. Identify potential caveats and issues or performance problems. For example, imagine if every endpoint is serializing the file every time. This is a performance issue and you can ask Copilot to identify it.
 
-<details>
-<summary>Tip</summary>
+??? question "Tip"
+    Prompt *(Agent Mode)*
 
-##### Prompt (Agent Mode)
+    ```text
+    Identify any potential problems with my main.rs file. Specifically I am
+    interested in understanding redundancy and any code that is doing unnecessary
+    work. Do not generate any code, just explain.
+    ```
 
-```text
-Identify any potential problems with my main.rs file. Specifically I am
-interested in understanding redundancy and any code that is doing unnecessary
-work. Do not generate any code, just explain.
-```
-
-</details>
 
 ### 10. Add more endpoints with tests
 
@@ -25,16 +22,11 @@ Finally, you have a 1:1 mapping of the Python project to the Rust project. Now y
 - Open the `test_endpoints.sh` file and ask Copilot to add more tests for the new endpoints
 - Run the tests to ensure they are passing, fix any issues that arise
 
+??? question "Tip"
+    Prompt (Agent Mode)
 
-<details>
-<summary>Tip</summary>
-
-##### Prompt (Agent Mode)
-
-```text
-The Rust API now has full parity with the Python application, but I want you to
-suggest me other potential endpoints that might be useful like
-/countries/{country} . Make sure you update the test_endpoints.sh file as well.
-```
-
-</details>
+    ```text
+    The Rust API now has full parity with the Python application, but I want you to
+    suggest me other potential endpoints that might be useful like
+    /countries/{country} . Make sure you update the test_endpoints.sh file as well.
+    ```

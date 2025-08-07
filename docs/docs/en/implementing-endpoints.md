@@ -4,20 +4,18 @@ Now that you have the scaffolding, you can start creating a single endpoint. Use
 
 - Open the `main.rs` file and ask Copilot to generate *only* the `/` endpoint
 
->[!NOTE]
-> You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
+!!! note
+    You might be tempted to ask Copilot to generate the whole file, but you must validate each part as you make progress. It is easier to validate smaller parts than a whole file with multiple endpoints and logic.
 
-<details>
-<summary>Tip</summary>
 
-##### Prompt (Agent Mode)
+??? question "Tip"
+    Prompt *(Agent Mode)*
 
-```text
-#codebase add the root of the API only. This is the '/' endpoint, do not
-generate other endpoints yet, focus only on the single root endpoint for now.
-```
+    ```text
+    #codebase add the root of the API only. This is the '/' endpoint, do not
+    generate other endpoints yet, focus only on the single root endpoint for now.
+    ```
 
-</details>
 
 ### 7. Validate your first Rust endpoint
 
@@ -27,20 +25,15 @@ Now that you have the first endpoint in Rust, it is time to validate. This proce
 - Ask Copilot help to run the Rust project in the same address and port as the Python project so that tests can run
 - Run the tests to ensure they are passing, fix any issues that arise
 
+??? question "Tip"
+    Prompt *(Agent Mode)*
 
-<details>
-<summary>Tip</summary>
-
-##### Prompt (Agent Mode)
-
-```text
-Run the Rust project in the same address and port as the Python one. Make sure
-the Python API is no longer running. Then, run the BASH tests so that I can
-verify the first endpoint in Rust is working. Only focus on the "/" endpoint
-for now
-```
-
-</details>
+    ```text
+    Run the Rust project in the same address and port as the Python one. Make sure
+    the Python API is no longer running. Then, run the BASH tests so that I can
+    verify the first endpoint in Rust is working. Only focus on the "/" endpoint
+    for now
+    ```
 
 ### 8. Continue with all other endpoints
 
@@ -48,5 +41,4 @@ Use the same process as above to create all other endpoints. Add a single endpoi
 
 For the JSON file, you will need to serialize and use `serde`. If you aren't familiar with this process you will have to rely on Copilot guidance. Ensure that you generate the smallest possible code and validate it immediately.
 
-> [!TIP]
-> Validating smaller parts of the code is easier than validating a whole file. It is also easier to debug smaller parts of the code. This is a good practice when using GitHub Copilot and it will help you in the long run.
+!!! success "Validating smaller parts of the code is easier than validating a whole file. It is also easier to debug smaller parts of the code. This is a good practice when using GitHub Copilot and it will help you in the long run."
