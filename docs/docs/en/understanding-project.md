@@ -12,7 +12,7 @@ Familiarize yourself with the project and its structure. The main file is
 
 First, open GitHub Copilot by pressing `Ctrl + Alt + I` if you are on Windows, or `Command + Shift + I` if you are on Mac, and ensure you are in **Ask** Mode:
 
-![An image showcasing the three different modes within the GitHub Copilot Chat window](../assets/chat-mode-dropdown-ask.png "GitHub Copilot Modes")
+![An image showcasing the three different modes within the GitHub Copilot Chat window](./media/chat-mode-dropdown-ask.png "GitHub Copilot Modes")
 
 Use the `#codebase` tool to provide context to Copilot and explain what is going on with this project.
 
@@ -22,7 +22,7 @@ Use the `#codebase` tool to provide context to Copilot and explain what is going
 <details>
 <summary>Tip</summary>
 
-##### Prompt (Ask Mode)
+Prompt (Ask Mode)
 
 ```text
 #codebase provide me a detailed summary of what this Python project is about
@@ -42,13 +42,13 @@ Launch your project and run the web application. Use GitHub Copilot chat with th
 
 ### 3. Explore and run the shell tests
 
-> Try using GitHub Copilot in Agent Mode for this step.
+> *Try using GitHub Copilot in Agent Mode for this step.*
 
 Tests are provided in the `tests` directory. Open the `test_endpoints.sh` file and use it to run tests. It requires the Python application to be running. Run the tests and inspect the output.
 
 - Ask GitHub Copilot if more tests can be added
 - If any tests are not currently passing, make sure they are updated
 
-> [!NOTE]
-> The application must be running for the tests to pass. If the app is not running you will get http errors.
-> You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.
+!!! note
+    The application must be running for the tests to pass. If the app is not running you will get http errors.
+    You can ask GitHub Copilot in Agent Mode for help to run the application and gain insights on how to start it.

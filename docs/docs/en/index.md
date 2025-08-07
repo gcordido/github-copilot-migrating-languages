@@ -1,12 +1,13 @@
-# Real World Code Migration with GitHub Copilot Agent Mode
+# WRK541 - Real World Code Migration with GitHub Copilot Agent Mode
 
-## A 55-minute interactive workshop
+![Microsoft AI Tour Banner](./media/aitour-banner.png)
 
 ### Perform a challenging migration to a completely different language
 
 - **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
 - **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
 - **What you'll build**: An HTTP API that uses Rust with full compatibility from the original HTTP API written in Python.
+
 
 ## Learning Objectives 
 

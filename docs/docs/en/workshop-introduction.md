@@ -11,12 +11,12 @@ This workshop will guide you through the complete migration process using GitHub
 Let's go through some challenging requests for GitHub Copilot and address them
 as they happen.
 
-> [!NOTE]
-> This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat** within **VS Code**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
->
-> Each step (where applicable) also contains a `Cheatsheet` which can be used to validate the Copilot suggestion(s) against the correct command.
->
-> 💡 Play around with different prompts and see how it affects the accuracy of the GitHub Copilot suggestions. For example, when using inline chat, you can use an additional prompt to refine the response without having to rewrite the whole prompt.
+!!! note
+    This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat** within **VS Code**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
+
+    Each step (where applicable) also contains a `Cheatsheet` which can be used to validate the Copilot suggestion(s) against the correct command.
+
+    💡 Play around with different prompts and see how it affects the accuracy of the GitHub Copilot suggestions. For example, when using inline chat, you can use an additional prompt to refine the response without having to rewrite the whole prompt.
 
 ## Workshop features
 
@@ -38,13 +38,13 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 
 **Ask Mode** is a Q&A assistant that helps you understand code, solve problems or learn concepts. It allows you to ask questions in natural language, and Copilot responds with explanations, snippets or suggestions. It does not directly modify any code. 
 
-> Ask mode works best for quick clarifications, brainstorming solutions and providing sample implementations.
+!!! tip "Ask mode works best for quick clarifications, brainstorming solutions and providing sample implementations."
 
 ### Edit Mode
 
 **Edit Mode** enables *direct code modifications* based on natural language instructions. You can highlight specific code blocks or files, describe the desired changes, and Copilot will propose edits. These changes are presented as diffs for your review, ensuring you retain control over the final implementation.
 
-> Try Edit mode in targeted updates, such as refactoring or adding error handling.
+!!! tip "Try Edit mode in targeted updates, such as refactoring or adding error handling."
 
 ### Agent Mode
 
