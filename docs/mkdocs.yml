@@ -15,7 +15,6 @@ nav:
   - Home: index.md
   - Workshop Navigation: navigating-workshop.md
   - Getting Started:
-    - Open the Workshop: open-workshop.md
     - Workshop Introduction: workshop-introduction.md
     - Understanding the Project: understanding-project.md
   - Strategize with Copilot:
