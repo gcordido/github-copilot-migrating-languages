@@ -1,6 +1,6 @@
 # Real World Code Migration with GitHub Copilot Agent Mode
 
-## A 50-minute interactive workshop
+## A 55-minute interactive workshop
 
 ### Perform a challenging migration to a completely different language
 
