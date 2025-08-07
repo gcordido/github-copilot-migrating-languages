@@ -48,10 +48,10 @@ plugins:
 theme:
   name: material
   features:
-    # - navigation.instant
+    - navigation.instant
     - navigation.footer
     - content.code.copy
-    - navigation.tabs.sticky
+    - navigation.tabs.sticky 
     - content.tabs.link
 
   font:
@@ -88,3 +88,6 @@ markdown_extensions:
 
 # extra_javascript:
   # - js/custom.js
+
+extra_css:
+  - css/custom.css

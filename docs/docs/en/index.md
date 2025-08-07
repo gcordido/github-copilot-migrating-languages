@@ -22,7 +22,7 @@ In this workshop, you will:
   - Optimize Performance and Identify Bottlenecks in Rust
   Learn to analyze and address potential performance issues, such as redundant file serialization, while building a production-ready Rust application.
 
-## :mega: Prerequisites
+## 📣 Prerequisites
 
 Before joining the workshop, there is only one prerequisite: you must have a public GitHub account. All resources, dependencies, and data are part of the repository itself. Make sure you have your GitHub Copilot license, trial, or the free version.
 
