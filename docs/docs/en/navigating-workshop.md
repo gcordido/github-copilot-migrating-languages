@@ -22,3 +22,19 @@ The text snippets are highlighted in gray boxes throughout the documentation. Yo
 ```text
 # Example text snippet
 ```
+
+### Understanding the different notes across the workshop.
+
+!!! tip "Tips like this showcase useful and quick insights or suggestions.
+
+!!! Note
+    Notes highlight important information about the topic at hand
+
+??? question "Tip (click to expand)"
+    These tips are clickable, and provide a suggested code/prompt to help you move forward.
+
+!!! warning
+    Warnings are complimentary to instructions, and must be paid attention to in order to achieve the desired results as you progress.
+
+!!! bug
+    Bugs like these explain why certain things may not go according to plan, such as dependencies or the non-deterministic nature of working with AI models and Agents.

@@ -49,3 +49,9 @@ GitHub Copilot offers three distinct modes: **Ask, Edit** and **Agent**, each de
 ### Agent Mode
 
  **Agent Mode** is the most autonomous and powerful of the three. It allows Copilot to analyze your entire project, plan tasks, make edits, run commands, and iterate until the goal is achieved. This mode is ideal for multi-step tasks, such as building features, fixing bugs, or scaffolding new components. While Agent mode automates much of the process, it still surfaces potentially risky actions for your approval, ensuring safety and correctness.
+
+!!! tip "Agent mode will carry out actions beyond just editing, such as writing code and creating new files. It is best used in tasks that imply more than just prompting for knowledge or editing single lines."
+
+## Available Models
+
+This workshop is model-agnostic, and as such we do not require learners to select a specific one during their work. However, it is worth noting that GitHub Copilot supports a variety of models (such as GPT-5, Claude Sonnet 4, Gemini, etc.) of varying capabilities. To learn more about GitHub Copilot and its different plans, visit the **Resources** section or visit this link: [GitHub Copilot Plans](https://github.com/features/copilot/plans)

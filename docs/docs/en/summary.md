@@ -1,5 +1,7 @@
 # Summary
 
+## Congratulations! You have completed this workshop.
+
 This workshop walked through a realistic, end‑to‑end migration of a small Python (FastAPI) HTTP service into a Rust web service, using **GitHub Copilot** as an AI pair‑programmer across its three modes (Ask, Edit, Agent). The focus was on disciplined, incremental migration, test‑driven validation, and leveraging AI responsibly (small diffs, continuous feedback, explicit validation).
 
 ## Story & Goal
@@ -75,16 +77,9 @@ Key prompting techniques included: scoping requests narrowly (“only add the ro
 5. Containerization and automation (Makefile) improve reproducibility post-migration.
 
 ## Suggested Next Steps
-If you wish to extend the project further:
-- Introduce performance benchmarks (criterion) comparing Python vs. Rust.
-- Add observability (structured logging, tracing) and metrics endpoints.
-- Integrate persistence (e.g., SQLite or Postgres via `sqlx`) instead of static JSON.
-- Add CI pipeline: build, test, lint (clippy), format (rustfmt), security scan (cargo-audit).
-- Explore incremental rollout strategies (shadow traffic, canary) conceptually.
+Take a look at the **Bonus Content Section**! We have laid down some bonus challenges to take this project further.
 
 ## Final Reflection
 You practiced a pragmatic, test-driven, AI-augmented migration path. By constraining Copilot to precise, reviewable changes and validating continuously, you achieved reliable parity while improving the operational and performance posture of the service. This mirrors real-world modernization efforts where correctness, safety, and maintainability must advance together.
 
 Happy shipping—and keep iterating with purpose! 🦀
-
-

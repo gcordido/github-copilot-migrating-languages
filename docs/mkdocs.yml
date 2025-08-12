@@ -16,6 +16,7 @@ nav:
   - Workshop Navigation: navigating-workshop.md
   - Getting Started:
     - Workshop Introduction: workshop-introduction.md
+    - Cloning the Repository: cloning-repository.md
     - Understanding the Project: understanding-project.md
   - Strategize with Copilot:
     - Analyze the Project: analyze-project.md
@@ -25,11 +26,11 @@ nav:
   - Validation and Testing:
     - Validate Correctness: validate-correctness.md
     - Add More Endpoints and Tests: add-more-endpoints-tests.md
+  - Summary: summary.md
   - Bonus Content:
     - Challenge 1: Challenge-1.md
     - Challenge 2: Challenge-2.md
     - Homework: Homework.md
-  - Summary: summary.md
   - Resources: resources.md
   - About: about.md
 
