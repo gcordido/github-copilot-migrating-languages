@@ -26,4 +26,4 @@ In this workshop, you will:
 
 Before joining the workshop, there is only one prerequisite: you must have your own GitHub account. All resources, dependencies, and data are part of the repository itself. Make sure you have your GitHub Copilot license, trial, or the free version.
 
-Let's get started by clicking on the **Next Button** on the bottom right corner that reads "Workshop Navigation"
+Let's get started by clicking on the *Next Button* on the bottom right corner that reads **"Workshop Navigation"**.

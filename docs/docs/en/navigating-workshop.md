@@ -25,7 +25,7 @@ The text snippets are highlighted in gray boxes throughout the documentation. Yo
 
 ### Understanding the different notes across the workshop.
 
-!!! tip "Tips like this showcase useful and quick insights or suggestions.
+!!! tip "Tips like this showcase useful and quick insights or suggestions."
 
 !!! Note
     Notes highlight important information about the topic at hand
