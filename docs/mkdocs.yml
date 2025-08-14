@@ -32,7 +32,6 @@ nav:
     - Challenge 2: Challenge-2.md
     - Homework: Homework.md
   - Resources: resources.md
-  - About: about.md
 
 plugins:
   - glightbox
