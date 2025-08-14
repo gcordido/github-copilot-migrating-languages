@@ -1,7 +1,7 @@
-# Zava Sales Assistant
+# Real World Code Migration with GitHub Copilot Agent Mode
 
 The instructions for this workshop are published to GitHub Pages at
-[aka.ms/aitour/wrk552](https://aka.ms/aitour/wrk552). This folder `docs` contains the source code for those instructions.
+[aka.ms/aitour/wrk541](https://aka.ms/aitour/wrk541). This folder `docs` contains the source code for those instructions.
 
 ## MKDocs
 
@@ -31,6 +31,7 @@ mkdocs gh-deploy
 
     mkdocs.yml    # The configuration file.
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        docs/
+            index.md  # The documentation homepage.
+            ...       # Other markdown pages, images and other files.
 
