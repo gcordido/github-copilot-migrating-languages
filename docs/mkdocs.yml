@@ -1,0 +1,92 @@
+site_name: Real World Code Migration with GitHub Copilot
+site_author: Alfredo Deza, Gustavo Cordido
+site_description: Perform a challenging migration to a completely different language.
+
+# Repository ..................................................
+repo_name: Real World Code Migration with GitHub Copilot
+repo_url: https://github.com/gcordido/github-copilot-migrating-languages
+
+
+# Copyright ...................................................
+copyright: >
+  Copyright &copy; 2023 - present Microsoft
+
+nav:
+  - Home: index.md
+  - Workshop Navigation: navigating-workshop.md
+  - Getting Started:
+    - Workshop Introduction: workshop-introduction.md
+    - Cloning the Repository: cloning-repository.md
+    - Understanding the Project: understanding-project.md
+  - Strategize with Copilot:
+    - Analyze the Project: analyze-project.md
+  - Converting to Rust:
+    - Create Rust Scaffolding: create-rust-scaffolding.md
+    - Implementing Endpoints: implementing-endpoints.md
+  - Validation and Testing:
+    - Validate Correctness: validate-correctness.md
+    - Add More Endpoints and Tests: add-more-endpoints-tests.md
+  - Summary: summary.md
+  - Bonus Content:
+    - Challenge 1: Challenge-1.md
+    - Challenge 2: Challenge-2.md
+    - Homework: Homework.md
+  - Resources: resources.md
+
+plugins:
+  - glightbox
+  - include-markdown
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.footer
+    - content.code.copy
+    - navigation.tabs.sticky 
+    - content.tabs.link
+
+  font:
+    code: Roboto Mono
+    text: Roboto
+
+  palette:
+    - scheme: default
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/brightness-2
+        name: Switch to dark mode
+    - scheme: slate
+      primary: amber
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 2
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+
+# extra_javascript:
+  # - js/custom.js
+
+extra_css:
+  - css/custom.css
