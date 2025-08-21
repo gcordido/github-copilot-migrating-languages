@@ -82,7 +82,7 @@ Before joining the workshop, there is only one prerequisite: you must have a pub
 "/><br />
         <sub><b>Gustavo Cordido
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/gcordido" title="talk">📢</a> 
     </td>
 </tr></table>
 
