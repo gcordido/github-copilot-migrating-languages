@@ -1,6 +1,5 @@
 # Summary
 
-# Summary
 
 ## Congratulations! You have completed this workshop.
 
