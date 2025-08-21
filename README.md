@@ -86,7 +86,6 @@ Before joining the workshop, there is only one prerequisite: you must have a pub
     </td>
 </tr></table>
 
-## 
 
 ## Responsible AI 
 
