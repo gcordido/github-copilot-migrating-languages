@@ -1,20 +1,21 @@
-<h1 align="center">Real world code migration with GitHub Copilot Agent Mode</h1>
-<h5 align="center">Perform a challenging migration to a completely different language</h3>
-
 <p align="center">
-  <a href="#mega-prerequisites">Prerequisites</a> •
-  <a href="#books-resources">Resources</a> •
-  <a href="#learning-objectives">Learning Objectives</a>
+<img src="img/Banner-MS-AI-Tour-26.png" alt="decorative banner" width="1200"/>
 </p>
+
+# [Microsoft AI Tour 2026](https://aitour.microsoft.com)
+
+## WRK541: Real World Code Migration with Github Copilot Agent Mode
+
+If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
+
+### Session Description
 
 - **Who is this for**: Any technologist that is looking to apply AI pair-programming techniques with GitHub Copilot to perform challenging work like migrating or translating from one programming language to another.
 - **What you'll learn**: You'll use advanced GitHub Copilot techniques that are specifically useful when translating projects in different programming languages, as well as the different modes GitHub Copilot has to offer.
 - **What you'll build**: An HTTP API that uses Rust with full compatibility from the original HTTP API written in Python.
 
-> [!NOTE]
-> Looking for the workshop? Head over to [the workshop directory](./workshop)
 
-## Learning Objectives
+### 🧠 Learning Outcomes
 
 In this workshop, you will:
 
@@ -29,144 +30,72 @@ In this workshop, you will:
   Learn to analyze and address potential performance issues, such as redundant file serialization, while building a production-ready Rust application.
 
 
-## :mega: Prerequisites
+## 📣 Prerequisites
 
 Before joining the workshop, there is only one prerequisite: you must have a public GitHub account. All resources, dependencies, and data are part of the repository itself. Make sure you have your GitHub Copilot license, trial, or the free version.
 
 
-## Main takeaways
 
-### 1. Define Clear Objectives and Requirements
+### 💻 Technologies Used
 
-*What needs to be achieved?*
+1. GitHub Copilot Chat
+1. VS Code
+1. Python & Rust
 
-Start by understanding the end goal clearly. What is the result you're after? For migrating a project from one programming language to another, you must ensure a thorough testing strategy that can help you validate correctness and completion when making critical changes.
+### 🔗 Session Resources
+| Resources          | Links                             | Description        |
+|:-------------------|:----------------------------------|:-------------------|
+| Additional Resources for this session | https://learn.microsoft.com | Links specific to this session |
 
-*What are the constraints?*
+### 📚 Continued Learning Resources
+| Resources          | Links                             | Description        |
+|:-------------------|:----------------------------------|:-------------------|
+| AI Tour 2026 Resource Center | https://aka.ms/AITour26-Resource-center | Links to all repos for AI Tour 26 Sessions |
+| Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)| Connect with the Azure AI Foundry Community! |
+| Learn at AI Tour | https://aka.ms/LearnAtAITour | Continue learning on Microsoft Learn |
+| Code with GitHub Codespaces | https://learn.microsoft.com/training/modules/code-with-github-codespaces/ | Try out GitHub Codespaces!
+| Using advanced GitHub Copilot features | https://learn.microsoft.com/training/modules/advanced-github-copilot/ | Some advanced features and tooling
 
-Identify limitations or exclusions. For example, large language models (LLMs) can have (or lack) enough context to provide the right suggestions. It is up to you, the driver, to make decisions that achieve your goal. Certain business logic might prevent you from adding other external libraries or functionality. For example, if you are migrating a project that is used in a production environment, you might not be able to add new libraries or functionality that could break the existing code.
+### 🌐 Multi-Language Support
 
-> [!TIP]
-> Focus on being precise with the scope of the problem. If you're unsure, start broad and then progressively narrow down the details.
+*languages will go here when its time to localize*
 
-### 2. Break Down the Problem into Components
+## Content Owners
 
-Decompose the migration process into smaller, manageable pieces. For example, start with the core application components and then test a single API endpoint or library function. This makes it easier to understand and solve the problem step-by-step:
+<!-- TODO: Add yourself as a content owner
+1. Change the src in the image tag to {your github url}.png
+2. Change INSERT NAME HERE to your name
+3. Change the github url in the final href to your url. -->
 
-- Identify and migrate single public, exposed functions, or API endpoints from Python to Rust
-- Develop and run tests, set up test environments, and create validation scripts to ensure correctness
-- Handle configuration and installation processes for the new Rust environment
 
-Ensure you're applying each condition step-by-step. In programming, breaking down a complex function into smaller helper functions can make it easier to write, debug, and migrate.
+<table>
+<tr>
+    <td align="center"><a href="https://github.com/alfredodeza">
+        <img src="https://github.com/alfredodeza.png" width="100px;" alt="Alfredo Deza"
+"/><br />
+        <sub><b> Alfredo Deza
+</b></sub></a><br />
+            <a href="https://github.com/alfredodeza" title="talk">📢</a> 
+    </td>
+    <td align="center"><a href="https://github.com/gcordido">
+        <img src="https://github.com/gcordido.png" width="100px;" alt="Gustavo Cordido
+"/><br />
+        <sub><b>Gustavo Cordido
+</b></sub></a><br />
+            <a href="https://github.com/gcordido" title="talk">📢</a> 
+    </td>
+</tr></table>
 
-> [!TIP]
-> Decomposition is a great way to deal with complexity, as it allows you to focus on one small task at a time.
 
-### 3. Leverage Domain-Specific Vocabulary and Context
+## Responsible AI 
 
-Use the appropriate terminology for the migration process. Whether you're translating Python code to Rust, working with APIs, or designing algorithms, being familiar with the domain vocabulary helps you form more accurate instructions for tools like GitHub Copilot or while communicating with others.
+Microsoft is committed to helping our customers use our AI products responsibly, sharing our learnings, and building trust-based partnerships through tools like Transparency Notes and Impact Assessments. Many of these resources can be found at [https://aka.ms/RAI](https://aka.ms/RAI).
+Microsoft’s approach to responsible AI is grounded in our AI principles of fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.
 
-For example, understanding terms like "borrow checker" in Rust or "decorators" in Python can help you better navigate the migration process and communicate effectively with others involved.
+Large-scale natural language, image, and speech models - like the ones used in this sample - can potentially behave in ways that are unfair, unreliable, or offensive, in turn causing harms. Please consult the [Azure OpenAI service Transparency note](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?tabs=text) to be informed about risks and limitations.
 
-> [!TIP]
-> The more precise the vocabulary and context you use, the easier it is for both humans and tools to understand and generate solutions.
+The recommended approach to mitigating these risks is to include a safety system in your architecture that can detect and prevent harmful behavior. [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) provides an independent layer of protection, able to detect harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. Within Azure AI Foundry portal, the Content Safety service allows you to view, explore and try out sample code for detecting harmful content across different modalities. The following [quickstart documentation](https://learn.microsoft.com/azure/ai-services/content-safety/quickstart-text?tabs=visual-studio%2Clinux&pivots=programming-language-rest) guides you through making requests to the service.
 
-### 4. Iterate and Refine the Solution
+Another aspect to take into account is the overall application performance. With multi-modal and multi-models applications, we consider performance to mean that the system performs as you and your users expect, including not generating harmful outputs. It's important to assess the performance of your overall application using [Performance and Quality and Risk and Safety evaluators](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-metrics-built-in). You also have the ability to create and evaluate with [custom evaluators](https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#custom-evaluators).
 
-Start simple, then refine. In complex problems, initial attempts are rarely perfect. Start by generating a basic solution and progressively build on it.
-
-In this workshop for migrating an application from Python to Rust, you might want to start with a single function or piece of functionality and then isolate it, while subsequently adding complexity. For example, begin by translating a simple Python function to Rust, then incrementally add more complex features and integrations.
-
-> [!TIP]
-> With every iteration, test and verify against expected outcomes to ensure the result is moving in the right direction.
-
-### 5. Use Examples to Clarify Requirements
-
-When creating prompts for AI models or explaining problems, provide examples. An example can illustrate your expectations, making the task clearer for anyone or anything (including tools like GitHub Copilot) involved in solving the problem.
-
-For instance, with migration code, you could explain what the inputs and expected outputs can be while including the logic to accomplish the task.
-
-> [!TIP]
-> Example-driven problem-solving helps align understanding. It's especially useful for ambiguous tasks.
-### 6. Identify Patterns and Reuse Solutions
-
-Recognize common patterns in your migration process and reuse solutions where applicable. For example, when migrating from Python to Rust, you might notice recurring patterns such as handling data structures, managing memory, or implementing similar algorithms. Once you identify these patterns, you can reuse and adapt these building blocks for different parts of your project.
-
-In code migration, identifying reusable functions or logic can save time and reduce errors. For instance, if you have a common way of handling API requests in Python, you can create a similar reusable function in Rust.
-
-> [!TIP]
-> Recognizing patterns is a hallmark of experience. As you encounter similar migration challenges repeatedly, you'll start to see similarities that can speed up your process and improve consistency.
-
-### 7. Use Constraints and Edge Cases for Robustness
-
-Think about edge cases and exceptions. Complex problems often involve handling not just the "ideal" data, but also the "edge" or "outlier" cases that might break a naive solution. Ensure that your prompt or solution accounts for these edge cases.
-
-In migration code, this might mean considering how the code behaves with unexpected inputs which would guide you to write new tests or modify existing ones.
-
-> [!TIP]
-> Thinking through edge cases helps you build more resilient, generalized solutions.
-
-### 8. Use Tools Effectively
-
-Whether you’re using GitHub Copilot, your editor auto-completion, or another form of automation, leverage the tools at your disposal but make sure you're guiding them with the right context. Tools are great for speeding up the generation, but they still need well-structured inputs and validation from you.
-
-For GitHub Copilot, ensure that your prompts are detailed, but concise. Tools often work best when given structured input that leaves little ambiguity.
-
-> [!TIP]
-> Be specific with your tools, but also check results, as tools might not always fully understand context unless properly guided.
-
-### 9. Seek Feedback and Collaboration
-
-When tackling a complex task, especially one that involves code or queries, collaboration and feedback are crucial. Don’t hesitate to ask peers or communities for insights or review.
-
-For example, when rewriting complex functions or code blocks, having a second pair of eyes can help catch mistakes or suggest improvements. This is especially true in migration projects where the original intent might not be clear.
-
-> [!TIP]
-> Collaboration often brings new perspectives, reducing blind spots.
-### 10. Test and Validate
-
-Testing and validation are key to ensuring that your solution works as expected. In the case of migrating code to another programming language, this is even more critical, as you want to ensure that the new code behaves similarly (or exactly the same) as the old code.
-
-Testing ensures that both the expected and unexpected situations are handled correctly, and that the migration has not introduced any new issues.
-
-> [!TIP]
-> Always have a validation step built into your process to catch mistakes early and ensure the migrated code meets all requirements.
-
-Generalization for Other Use Cases:
-For writing code or algorithms: The same concepts apply when generating functions, classes, or workflows. Clearly define input, expected output, edge cases, and iterate to refine.
-
-For AI model prompts: When asking for something complex (like generating code, text, or designs), give clear objectives, break down the problem, provide context, and iterate.
-
-For design or content generation: Define the purpose, break down design elements, and provide examples or inspiration, then refine based on feedback.
-
-Final Thoughts:
-Complex generation problems often involve a balance of clarity, decomposition, iteration, and validation. Whether it's a migrating from one programming language to another or any other task, keeping these concepts in mind will allow you to generate more accurate, efficient, and reliable results.
-
-## :books: Resources
-
-Although not required, some of the features this workshop covers are in these Microsoft Learning modules:
-
-- [Code with GitHub Codespaces](https://learn.microsoft.com/training/modules/code-with-github-codespaces/)
-- [Using advanced GitHub Copilot features](https://learn.microsoft.com/training/modules/advanced-github-copilot/)
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+You can evaluate your AI application in your development environment using the [Azure AI Evaluation SDK](https://microsoft.github.io/promptflow/index.html). Given either a test dataset or a target, your generative AI application generations are quantitatively measured with built-in evaluators or custom evaluators of your choice. To get started with the azure ai evaluation sdk to evaluate your system, you can follow the [quickstart guide](https://learn.microsoft.com/azure/ai-studio/how-to/develop/flow-evaluate-sdk). Once you execute an evaluation run, you can [visualize the results in Azure AI Foundry portal ](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-flow-results).
