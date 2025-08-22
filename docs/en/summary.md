@@ -32,4 +32,4 @@ Take a look at the **Bonus Content Section**! We have laid down some bonus chall
 ## Final Reflection
 You practiced a pragmatic, test-driven, AI-augmented migration path. By constraining Copilot to precise, reviewable changes and validating continuously, you achieved reliable parity while improving the operational and performance posture of the service. This mirrors real-world modernization efforts where correctness, safety, and maintainability must advance together.
 
-Happy shipping—and keep iterating with purpose! 🦀
+Happy shipping and keep iterating with purpose! 🦀
